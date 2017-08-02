@@ -1,9 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{moncours_beamer}
 \usepackage{ulem}
-%\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
-
-
+\usepackage[dvipsnames]{xcolor}
 
 
 \usepackage{tikz,tkz-tab}
@@ -11,13 +9,13 @@
 
 
 
-\definecolor{red}{rgb}{1.0, 0.0, 0.0}
+%\definecolor{red}{rgb}{1.0, 0.0, 0.0}
 
 
 
 \defbeamertemplate{section in toc}{sections numbered roman}{%
 	\leavevmode%
-	{\Large {\color{red} \MakeUppercase{\romannumeral\inserttocsectionnumber}.\ %
+	{\Large {\color{BrickRed}  \MakeUppercase{\romannumeral\inserttocsectionnumber}.\ %
 	\inserttocsection\par}}}
 
 
@@ -33,9 +31,12 @@
 
 
 
-\newcommand{\kw}[1]{\textbf{#1}}
-
-
+%----------------------------------------------------
+% Mise en forme
+%-----------------------------------------------------
+%Mise en évidence de termes clés
+\newcommand{\kw}[1]{\textcolor{BrickRed}{\underline{\textbf{#1}}}}
+\newcommand{\mykw}[1]{\textcolor{BrickRed}{\underline{\textbf{#1}}}}
 %------------------------------------------------------
 % Définitions
 
@@ -132,28 +133,7 @@
 }
 
 
-%\newenvironment{mymethname}[1]{
-%	\begin{pasbox}[style=meth ,degrade, name=#1]
-%	}{
-%\end{pasbox}
-%}
 
-%------------------------------------------------------
-% 
-%\newenvironment{mybox}{
-%	\begin{pasbox}[style=prop ,degrade, notitle, color=NavyBlue]
-%}{
-%	\end{pasbox}
-%}
-
-%------------------------------------------------------
-% 
-
-%\newenvironment{mywarning}{
-%	\begin{attention}[0.7]
-%}{
-%	\end{attention}
-%}
 
 %------------------------------------------------------
 % Illustartion
@@ -176,11 +156,23 @@
 
 %------------------------------------------------------
 \newenvironment{myact}[1]{
-	\begin{pasbox}{Activité #1}
+	\begin{block}{Activité #1}
 	}{
-\end{pasbox}
+	\end{block}
 }
 
+%------------------------------------------------------
+\newenvironment{mybilan}{	
+	\begin{alertblock}{\'A retenir}
+	}{
+	\end{alertblock}
+}
+
+\newenvironment{mybilan2}[1]{	
+	\begin{alertblock}{\'A retenir : #1}
+	}{
+	\end{alertblock}
+}
 %------------------------------------------------------
 \newenvironment{myrep}{
 	\begin{block}{Réponse}
