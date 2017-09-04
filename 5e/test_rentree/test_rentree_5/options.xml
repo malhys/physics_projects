@@ -3,11 +3,11 @@
   <_modifie>1</_modifie>
   <_modifie_ok>0</_modifie_ok>
   <after_export>file</after_export>
-  <allocate_ids>0</allocate_ids>
+  <allocate_ids></allocate_ids>
   <annote_position>marges</annote_position>
   <annote_rtl></annote_rtl>
   <assoc_code></assoc_code>
-  <auto_capture_mode>-1</auto_capture_mode>
+  <auto_capture_mode>0</auto_capture_mode>
   <code_examen></code_examen>
   <cr>cr</cr>
   <data>data</data>
@@ -27,8 +27,8 @@ Cordialement.</email_text>
   <export_include_abs></export_include_abs>
   <export_ncols>2</export_ncols>
   <export_ods_columns>student.copy,student.key,student.name</export_ods_columns>
-  <export_ods_groupsums>0</export_ods_groupsums>
-  <export_ods_stats>0</export_ods_stats>
+  <export_ods_groupsums></export_ods_groupsums>
+  <export_ods_stats></export_ods_stats>
   <export_ods_statsindic>1</export_ods_statsindic>
   <export_pagesize>a4</export_pagesize>
   <export_sort>n</export_sort>
@@ -41,7 +41,7 @@ Cordialement.</email_text>
   <modele_regroupement></modele_regroupement>
   <moteur_latex_b>pdflatex</moteur_latex_b>
   <nom_examen></nom_examen>
-  <nombre_copies>0</nombre_copies>
+  <nombre_copies>34</nombre_copies>
   <note_arrondi>inf</note_arrondi>
   <note_grain>0.5</note_grain>
   <note_max>20</note_max>
